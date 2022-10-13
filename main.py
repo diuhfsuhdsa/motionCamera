@@ -4,7 +4,7 @@ import time
 import pygame.camera # must install pygame
 import os
 
-os.chdir("D:/Coding Projects/stayoutofmyroom/assets")
+os.chdir("****path*****/assets")
 list_of_files = os.listdir()
 for m in range(0, len(list_of_files)-1):
     os.remove(list_of_files[m])
@@ -84,10 +84,10 @@ def save_img_to_caught():
         return
     print("caught")
     timelist_ = time.localtime()
-    os.chdir("D:/Coding Projects/stayoutofmyroom/caught")
+    os.chdir("****path*****/caught")
     pygame.image.save(image, (str(timelist_[0]) + "__" + str(timelist_[1]) + "__" + str(timelist_[2]) + "__" +
                               str(timelist_[3]) + "_" + str(timelist_[4]) + "_" + str(timelist_[5]) + ".jpg"))
-    os.chdir("D:/Coding Projects/stayoutofmyroom/assets")
+    os.chdir("****path*****/assets")
 
 
 capture_img_()
