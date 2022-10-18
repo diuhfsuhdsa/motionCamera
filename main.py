@@ -1,5 +1,5 @@
 # Import the required libraries
-from torchvision.io import read_image must install torch and/or torchvision
+from torchvision.io import read_image # must install torch and/or torchvision
 import time
 import pygame.camera # must install pygame
 import os
